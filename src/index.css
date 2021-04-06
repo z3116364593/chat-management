@@ -1,13 +1,65 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  color: rgba(0,0,0,.85);
+  font-size: 14px;
+  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  background-color: #fff;
+  font-feature-settings: "tnum","tnum";
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.crumbs {
+  box-sizing: border-box;
+  margin: 0;
+  color: rgba(0,0,0,.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: "tnum","tnum";
+  position: relative;
+  padding: 16px 24px;
+  background-color: #fff;
+}
+
+.content {
+  width: calc(100% - 48px);
+  margin: 24px;
+}
+
+.table-area {
+  border-radius: 2px;
+  padding: 0 24px;
+  background-color: #fff;
+}
+
+.table-action {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.table-icon {
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.table-icon:hover {
+  color: #1890ff;
+}
+
+.table-icon:nth-last-of-type(1) {
+  margin-right: 0;
 }
